@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}BookLens{% endblock %}</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('web.static', filename='css/main.css') }}"
+    >
+</head>
+<body>
+    <header class="site-header">
+        <a href="{{ url_for('web.home') }}" class="logo">BookLens</a>
+        <span class="tagline">Discover the connections between books.</span>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>BookLens — Literature, connected.</p>
+    </footer>
+</body>
+</html>

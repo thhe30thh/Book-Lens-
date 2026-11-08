@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+instance/
+*.db
+*.sqlite3
+.env
+.DS_Store
+.vscode/
+.idea/
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+instance/
+
+# Downloaded API cache
+data/cache/
+
+# Local backup files
+data/review_queue_backup.csv
